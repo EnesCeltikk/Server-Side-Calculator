@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="client1.js"></script>
+    <script src="client2.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Server Side Calculator</title>
+</head>
+<body>
+    <div id="header">
+        <h1>Server Side Calculator</h1>
+    </div>
+
+    <div id="container">
+        <div id="inputFields">
+            <h3>Klavye</h3>
+            <div id="firstNumDiv" class="left">
+                <label>Number 1</label>
+                <input id="firstNumInput" type="text">
+            </div>
+            <div id="operatorDiv" class="left">
+                <button id="additionButton" class="operatorButton">+</button>
+                <button id="subtractionButton" class="operatorButton">-</button>
+                <button id="multiplicationButton" class="operatorButton">*</button>
+                <button id="divisionButton" class="operatorButton">/</button>
+            </div>
+            
+            <div id="secondNumDiv" class="left">                
+                <label>Number 2</label>
+                <input id="secondNumInput" type="text">
+            </div>
+            
+            <div id="buttonsDiv" class="left">
+                <button id="submitButton">=</button>
+                <button id="clearButton">C</button>
+                <button id="clearHistory">Clear History</button>  
+            </div>
+
+            <div id="result"></div>
+
+            <div>
+                <ul id="historyUl"></ul>
+            </div>
+            
+        </div>
+        
+        <div id="calculator">
+            <h3>Key Pad</h3>
+            <div id="keyPad">
+                <input type="text" id="keyInput">
+                <button id="keyClearButton">C</button>
+                <div id="numberKeys">
+                    <button class="key keyInput number">7</button>
+                    <button class="key keyInput number">8</button>
+                    <button class="key keyInput number">9</button>
+                    <button class="key keyInput operatorKey">+</button>
+                    <button class="key keyInput number">4</button>
+                    <button class="key keyInput number">5</button>
+                    <button class="key keyInput number">6</button>
+                    <button class="key keyInput operatorKey">-</button>
+                    <button class="key keyInput number">1</button>
+                    <button class="key keyInput number">2</button>
+                    <button class="key keyInput number">3</button>
+                    <button class="key keyInput operatorKey">*</button>
+                    <button class="key keyInput number">0</button>
+                    <button class="key keyInput number">.</button>
+                    <button class="key equal">=</button>
+                    <button class="key keyInput operatorKey">/</button>
+                </div>            
+            </div>
+
+            <div id="result2"></div>
+
+            <div>
+                <button id="clearHistory2">Clear History</button>
+                <ul id="historyUl2"></ul>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
